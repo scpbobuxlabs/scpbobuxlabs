@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>temp's epic site</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Checklist</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-top: 50px;
+        }
+        .links, .checklist {
+            width: 45%;
+        }
+        .links ul, .checklist ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .links ul li, .checklist ul li {
+            margin: 10px 0;
+        }
+        .bottom-links {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .bottom-links a {
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
-  <h1><a href="https://discord.com/users/972915622679818340">tempdoesstuff</a></h1>
-  <a href="https://discord.gg/wBKptTE5Bc">
-
+    <div class="container">
+        <div class="links">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="https://example1.com">Example Link 1</a></li>
+                <li><a href="https://example2.com">Example Link 2</a></li>
+                <li><a href="https://example3.com">Example Link 3</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </div>
+        <div class="checklist">
+            <h2>Checklist</h2>
+            <ul>
+                <li><input type="checkbox" id="task1"><label for="task1"> Task 1</label></li>
+                <li><input type="checkbox" id="task2"><label for="task2"> Task 2</label></li>
+                <li><input type="checkbox" id="task3"><label for="task3"> Task 3</label></li>
+                <!-- Add more checklist items as needed -->
+            </ul>
+        </div>
+    </div>
+    <div class="bottom-links">
+        <a href="https://bottomlink1.com">Bottom Link 1</a>
+        <a href="https://bottomlink2.com">Bottom Link 2</a>
+        <a href="https://bottomlink3.com">Bottom Link 3</a>
+        <!-- Add more bottom links as needed -->
+    </div>
 </body>
 </html>
